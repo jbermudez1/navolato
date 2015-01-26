@@ -1,0 +1,169 @@
+// MIXIMS
+
+.cuadros(@color:red) {
+background-color: #f9f9f9;
+color: gray;
+text-align: center;
+padding-top: 1em;
+min-height: 170px;
+font-size: 1.2em;
+
+ &:before{
+ 	content: "";
+ 	position: absolute;
+ 	width: 85%;
+ 	left: 0;
+ 	right: 0;
+ 	margin-right: auto;
+ 	margin-left: auto;
+ 	top: 0;
+ 	clear: both;
+ 	height: 0.3em;
+ 	background-color: @color;
+ 		}
+ &:hover {
+ 	box-shadow: 0px 0px 5px gray;
+ }
+ i{
+ 	color: @color;
+ 	position: absolute;
+ 	bottom: 0.1em;
+ 	left: 0;
+ 	right: 0;
+ 	 }
+
+}
+
+
+body {
+	
+}
+.titulo {
+	font-size: 2em;
+	font-weight: 100;
+	color: gray;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	position: relative;
+	&:after {
+		margin-left: 0.5em;
+		content: "";
+		background-color: gray;
+		height: 0.2em;
+		width: 78%;
+		position: absolute;
+		bottom: 40px;
+	}
+}
+
+.lineatop {
+	height: 0.6em;
+	background-color: #67858e
+}
+.header {
+	// background: url(../../img/fondoabajo.png), url(../../img/fondoimg.png);
+	// background-repeat: repeat-x, no-repeat;
+	// background-position: center bottom;
+	background-color: #eff1f4;
+
+}
+.logo {
+	float: left;
+}
+nav {
+	float: right;
+	padding-top: 3em;
+}
+nav ul li {
+	display: inline-block;
+	font-size: 1.3em;
+	padding-left: 1em;
+ 
+}
+.banner {
+	background-image: url(../../img/navolato.jpg);
+	background-size: cover;
+	height: 400px;
+	background-position: center;
+	text-align: center;
+}
+.buscaTramitr {
+	display: inline-block;
+	padding-top: 9em;
+	
+}
+.buscaTramitr > p {
+	font-size: 3em;
+	color: white;
+	font-weight: 100;
+	text-shadow: 1px 2px 2px black;
+
+}
+.buscaTramitr > input {
+	background: rgba(255, 255, 255, 0.5);
+	border: 1px solid white;
+	border-radius: 20em;
+	font-size: 2em;
+	width: 100%;
+	text-align: center;
+}
+.buscaTramitr > button {
+	margin: 1em;
+	font-size: 1.3em;
+	background-color: green
+	border-radius
+}
+.opciones {
+	padding-top: 3em;
+}
+
+.opcionesActions .uno{
+	.cuadros(red);
+}
+.opcionesActions .dos{
+	.cuadros(orange);
+}
+.opcionesActions .tres{
+	.cuadros(#7cce5b);
+}
+.opcionesActions .cuatro{
+	.cuadros(#72a3cc);
+}
+.opcionesActions .cinco{
+	.cuadros(#9464bd);
+}
+.opcionesActions .seis{
+	.cuadros(#ffe013);
+}
+.noticias  ul li {
+	color: gray;
+}
+.noticias  ul {
+	padding-left: 0!important;
+}
+
+footer {
+	background-color: #67858e;
+	color: white
+}
+.copy {
+	float: left;
+}
+.logosFooter {
+	float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
